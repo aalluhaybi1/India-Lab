@@ -33,18 +33,4 @@ function validateInterests() {
     
     return true;
   }
-  // Function to load favorite data
-function loadFavorites() {
-    $.getJSON('favorites.json', function(data) {
-      let favorites = data.favorites;
-      
-      // Display favorite data
-      favorites.forEach(function(favorite) {
-        $('#favoritesList').append(`<li>${favorite.name} - ${favorite.category}</li>`);
-      });
-    });
-  }
-  
-  // Call the function to load favorite data
-  loadFavorites();
   

@@ -47,6 +47,26 @@ function validatePassword() {
   return true;
 }
 
+// Function to validate interests
+function validateInterests() {
+  // Add validation logic for interests checkboxes
+  
+  return true;
+}
+
+// Function to validate availability
+function validateAvailability() {
+  // Add validation logic for availability checkboxes
+  
+  return true;
+}
+
+// Function to validate referral
+function validateReferral() {
+  // Add validation logic for referral selection
+  
+  return true;
+}
 
 // Function to package and display data
 function displayData() {
@@ -55,5 +75,5 @@ function displayData() {
   let username = $('#username').val();
   let confirmation = "Thank you, " + name + " (" + username + ") for your interest! You will hear from us via your email: " + email + " soon!";
   $('#confirmationMessage').text(confirmation);
-  $('#confirmationModal').modal('show'); 
+  $('#confirmationModal').modal('show'); // Show the modal
 };

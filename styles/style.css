@@ -1,0 +1,9 @@
+/*background styling for webpage*/
+body{
+background-image: url("https://ideogram.ai/api/images/direct/y5NrYTJYRb2vXZV_FfH9Vw.png");
+}
+
+#confirmMsg {
+  color:white;
+  font-size:25px
+}

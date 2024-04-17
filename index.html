@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Programming Club Registration</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+  <!-- Titlebar introducing page and reason for page -->
+<div class="row">
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-sm navbar-light text-white" style="background-color: rgba(170, 160, 178, 0.9);">
+      
+  <div class="offset-md-2 col-md-8 mx-auto text-center">
+
+      <h2>The Programming Club </h2>
+      <h4>Welcome, Fellow to Register.</h4>
+      <h4>Thank You For Your Interest In Our Club!</h4>
+    </nav>
+    </div>
+   </div>
+  </div>
+<div class="container-fluid">
+  <!-- Personal Information Section -->
+  <div class="card m-3 col-sm-6 text-center mx-auto bg-dark text-white" style="background-color: rgba(78, 67, 86, 0.9);">
+
+    <div class="card-header text-center">Personal Information</div>
+    <div class="card-body">
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name" placeholder="Your Name Here"/>
+      <button type="button" class="btn btn-danger btn-sm" onclick="document.getElementById('name').value = ''">Clear</button>
+      <br>
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" placeholder="Your Email Here"/>
+      <button type="button" class="btn btn-danger btn-sm" onclick="document.getElementById('email').value = ''">Clear</button>
+    </div>
+  </div>
+
+  <!-- Username Section -->
+  <div class="card m-3 col-sm-6 text-center mx-auto bg-dark text-white" style="background-color: rgba(78, 67, 86, 0.9);">
+
+
+    <div class="card-header">Choose a Username</div>
+    <div class="card-body">
+      <label for="username">Username:</label>
+      <input type="text" name="username" id="username" placeholder="Your Username Here"/>
+      <button type="button" class="btn btn-success btn-sm">Check Availability</button>
+      <button type="button" class="btn btn-danger btn-sm" onclick="document.getElementById('username').value = ''">Clear</button>
+    </div>
+  </div>
+
+  <!-- Password Section -->
+  <div class="card m-3 col-sm-6 text-center mx-auto bg-dark text-white">
+    <div class="card-header">Set a Password</div>
+    <div class="card-body">
+      <label for="password">Password:</label>
+      <input type="password" name="password" id="password" placeholder="Your Password Here"/>
+      <button type="button" class="btn btn-danger btn-sm" onclick="document.getElementById('password').value = ''">Clear</button>
+    </div>
+  </div>
+
+  <!-- Interest Section -->
+  <div class="card m-3 col-sm-6 text-left mx-auto bg-dark text-white">
+    <div class="card-header text-center">Programming Interests</div>
+    <div class="card-body">
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="webDev" name="webDev" value="webDev" checked>
+        <label class="form-check-label" for="webDev">Web Development</label>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="appDev" name="appDev" value="appDev">
+        <label class="form-check-label" for="appDev">App Development</label>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="dataScience" name="dataScience" value="dataScience">
+        <label class="form-check-label" for="dataScience">Data Science</label>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="ai" name="ai" value="ai">
+        <label class="form-check-label" for="ai">Artificial Intelligence</label>
+      </div>
+    </div>
+  </div>
+
+  <!-- Availability Section -->
+  <div class="card m-3 col-sm-6 text-left mx-auto bg-dark text-white">
+    <div class="card-header text-center">Availability for Meetings</div>
+    <div class="card-body">
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="monday" name="monday" value="monday" checked>
+        <label class="form-check-label" for="monday">Monday</label>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="wednesday" name="wednesday" value="wednesday">
+        <label class="form-check-label" for="wednesday">Wednesday</label>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="friday" name="friday" value="friday">
+        <label class="form-check-label" for="friday">Friday</label>
+      </div>
+    </div>
+  </div>
+
+  <!-- Referral Section -->
+  <div class="card m-3 col-sm-6 text-center mx-auto bg-dark text-white"style="background-color: rgba(78, 67, 86, 0.7);">
+    <div class="card-header">How did you hear about us?</div>
+    <div class="card-body">
+      <select name="source" id="source">
+        <option value="searchEngine">Search Engine</option>
+        <option value="friend">Friend</option>
+        <option value="socialMedia">Social Media</option>
+        <option value="event">Event</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Submission Button -->
+  <div class="offset-md-2 col-md-8 mx-auto text-center">
+    <input type="submit" id="submitBtn" class="btn btn-info text-white btn-outline-light btn-lg text-center mx-auto" value="Register">
+    <p id="confirmMsg"></p>
+  </div>
+
+  <!-- Footer -->
+  <div class="mt-5 p-2 text-white text-center" style="background-color: rgba(78, 67, 86, 0.9);">
+    <p><a href="https://github.com/aalluhaybi1" target="_blank" style="text-decoration:none; color:white">Ayman Alluhaybi</a> | <a href="https://github.com/aalluhaybi1/India-Lab" target="_blank" style="text-decoration:none; color:white"> Club's Code</a> | <a href="https://gist.github.com/barrycumbie/94d7c36ba2e18b02aeba969aa6078f23" target="_blank" style="text-decoration:none; color:white">CIS 376-01</a></p>
+  </div>
+</div>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js'></script>
+<script  src="./scripts/script.js"></script>
+</body>
+</html>

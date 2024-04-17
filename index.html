@@ -27,19 +27,18 @@
   </div>
 <div class="container-fluid">
   <!-- Personal Information Section -->
-  <div class="card m-3 col-sm-6 text-center mx-auto bg-dark text-white" style="background-color: rgba(78, 67, 86, 0.9);">
-
-    <div class="card-header text-center">Personal Information</div>
-    <div class="card-body">
-      <label for="name">Name:</label>
-      <input type="text" name="name" id="name" placeholder="Your Name Here"/>
-      <button type="button" class="btn btn-danger btn-sm" onclick="document.getElementById('name').value = ''">Clear</button>
-      <br>
-      <label for="email">Email:</label>
-      <input type="email" name="email" id="email" placeholder="Your Email Here"/>
-      <button type="button" class="btn btn-danger btn-sm" onclick="document.getElementById('email').value = ''">Clear</button>
-    </div>
+<div class="card m-3 col-sm-6 text-center mx-auto bg-dark text-white">
+  <div class="card-header text-center">Personal Information</div>
+  <div class="card-body">
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name" placeholder="Your Name Here" required minlength="2" maxlength="50">
+    <small class="text-muted">Please enter your name (2-50 characters).</small><br>
+    <label for="email">Email:</label>
+    <input type="email" name="email" id="email" placeholder="Your Email Here" required>
+    <small class="text-muted">Please enter a valid email address.</small>
   </div>
+</div>
+
 
   <!-- Username Section -->
   <div class="card m-3 col-sm-6 text-center mx-auto bg-dark text-white" style="background-color: rgba(78, 67, 86, 0.9);">

@@ -1,0 +1,17 @@
+{
+    "favorites": [
+      {
+        "name": "JavaScript",
+        "category": "Programming Language"
+      },
+      {
+        "name": "Bootstrap",
+        "category": "Framework"
+      },
+      {
+        "name": "React",
+        "category": "Library"
+      }
+    ]
+  }
+  
